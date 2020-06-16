@@ -160,13 +160,10 @@ def main(path_to):
     if os.path.isfile(path_to):
         # check if archive exists and then compress the file
         file = re.findall(u'([-A-Za-z0-9.\u00C0-\u017F ]+)\\.[a-z]+$', path_to)
-        print(file)
         archive = '/Users/.../Documents/Archive/'
         # path to folder to create zip file:
         path_to_archive = archive + file[0] + '.zip'
-        print(path_to_archive)
         archive_file = file[0] + '.zip'
-        print(archive_file)
         # check if archive exists and then compress the file and write the log file
         dir_lst = os.listdir(archive)
         if archive_file not in dir_lst:
@@ -179,13 +176,10 @@ def main(path_to):
     # test if path is a folder:
     elif os.path.isdir(path_to):
         folder = re.findall(u'([-A-Za-z0-9.\u00C0-\u017F ]+$)', path_to)
-        print(folder)
         archive = '/Users/.../Documents/Archive/'
         # path to folder to create zip file:
         path_to_archive = archive + folder[0] + '.zip'
-        print(path_to_archive)
         archive_folder = folder[0] + '.zip'
-        print(archive_folder)
         # check if archive exists and then compress the folder and write the log file
         dir_lst = os.listdir(archive)
         if archive_folder not in dir_lst:
