@@ -158,7 +158,6 @@ def main(path_to):
 
     # test if path is a file:
     if os.path.isfile(path_to):
-        # check if archive exists and then compress the file
         file = re.findall(u'([-A-Za-z0-9.\u00C0-\u017F ]+)\\.[a-z]+$', path_to)
         archive = '/Users/.../Documents/Archive/'
         # path to folder to create zip file:
