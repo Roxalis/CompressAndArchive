@@ -164,7 +164,7 @@ def main(path_to):
         # path to folder to create zip file:
         path_to_archive = archive + file[0] + '.zip'
         archive_file = file[0] + '.zip'
-        # check if archive exists and then compress the file and write the log file
+        # check if archive exists and then compress the file
         dir_lst = os.listdir(archive)
         if archive_file not in dir_lst:
             compress_file(path_to_archive, path_to)
