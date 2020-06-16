@@ -1,6 +1,6 @@
 # Compress And Archive
 
-'compressandarchive' is a program that takes a path to a file or folder as an argument and compresses it as a zip file. The path to the archive is hard wired into the program. Nothing special here. But it also generates a log file in case of a folder compression that contains, apart from listing all the compressed files for a quick search, a table (with file extensions, the number of files, and compression factors), the total number of files zipped, total compressed and uncompressed data size, and overall compression factor as well as the zipped data as the percentage of the unzipped state.
+'compressandarchive' is a program that takes a path to a file or folder as an argument and compresses it as a zip file. The path to the archive is hard wired into the program. Nothing special here. But it also generates a log file in case of a folder compression. The log file contains, apart from listing all the compressed files for a quick search: a table (with file extensions, the number of files, and compression factors), the total number of files zipped, total compressed and uncompressed data size, and overall compression factor as well as the zipped data as the percentage of the unzipped state.
 
 An example of the log file contents:
 
