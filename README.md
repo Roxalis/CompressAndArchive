@@ -4,7 +4,7 @@
 
 An example of the log file contents:
 
-	2020-06-15 01:21:43.273765
+	2020-06-15 01:21:43
 
 	Compressed folder: an archive name
 
@@ -23,4 +23,4 @@ An example of the log file contents:
 	Files:
 	...
 
-The program can easily be implemented as a folder action in Automator on a Apple OS X computer.
+The program can easily be implemented as a folder action in Automator on an Apple OS X computer.
