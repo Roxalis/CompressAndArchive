@@ -158,7 +158,7 @@ def main(path_to):
 
     # test if path is a file:
     if os.path.isfile(path_to):
-        file = re.findall(u'([-A-Za-z0-9.\u00C0-\u017F ]+)\\.[a-z]+$', path_to)
+        file = re.findall(u'([-\w.\u00C0-\u017F ]+)\\.[a-z]+$', path_to)
         archive = '/Users/.../Documents/Archive/'
         # path to folder to create zip file:
         path_to_archive = archive + file[0] + '.zip'
@@ -174,7 +174,7 @@ def main(path_to):
 
     # test if path is a folder:
     elif os.path.isdir(path_to):
-        folder = re.findall(u'([-A-Za-z0-9.\u00C0-\u017F ]+$)', path_to)
+        folder = re.findall(u'([-\w.\u00C0-\u017F ]+$)', path_to)
         archive = '/Users/.../Documents/Archive/'
         # path to folder to create zip file:
         path_to_archive = archive + folder[0] + '.zip'
