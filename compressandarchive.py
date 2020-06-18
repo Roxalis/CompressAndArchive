@@ -63,7 +63,7 @@ def get_zip_data_lists(path_to):
     # generates list of file extensions, e.g. hidden files are 'other'
     file_ext_lst = []
     for f in zip_file_lst:
-        file_extension = re.findall(r'[\w\s]+\.([A-Za-z]+$)', f)
+        file_extension = re.findall(u'[-\\w.\u00C0-\u017F ]+\\.([A-Za-z]+$)', f)
         if len(file_extension) == 0:
             file_ext_lst += ['other']
         else:
@@ -158,7 +158,7 @@ def main(path_to):
 
     # test if path is a file:
     if os.path.isfile(path_to):
-        file = re.findall(u'([-\w.\u00C0-\u017F ]+)\\.[a-z]+$', path_to)
+        file = re.findall(u'([-\\w.\u00C0-\u017F ]+)\\.[a-z]+$', path_to)
         archive = '/Users/.../Documents/Archive/'
         # path to folder to create zip file:
         path_to_archive = archive + file[0] + '.zip'
@@ -174,7 +174,7 @@ def main(path_to):
 
     # test if path is a folder:
     elif os.path.isdir(path_to):
-        folder = re.findall(u'([-\w.\u00C0-\u017F ]+$)', path_to)
+        folder = re.findall(u'([-\\w.\u00C0-\u017F ]+$)', path_to)
         archive = '/Users/.../Documents/Archive/'
         # path to folder to create zip file:
         path_to_archive = archive + folder[0] + '.zip'
