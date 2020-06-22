@@ -25,4 +25,4 @@ An example of the log file contents:
 
 The program can easily be implemented as a folder action in Automator on an Apple OS X computer.
 
-The program was tested with Python 3.7 and Mac OS X 10.13.6.
+The program was tested with Python 3.7 (Anaconda) and macOS 10.13.6.
